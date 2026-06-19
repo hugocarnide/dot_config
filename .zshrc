@@ -167,6 +167,7 @@ bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 alias d4s='docker run --rm --pull always -it -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/jr-k/d4s:latest'
 alias studio4='terminator -l studio4'
+alias yadm-update='yadm add -u && yadm commit -m "update $(date +%y%m%d_%H%M%S)" && yadm pull -r && yadm push --force-with-lease'
 
 
 # Added by Antigravity CLI installer
