@@ -1,0 +1,63 @@
+[global_config]
+  scroll_tabbar = True
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, InsertTermName
+  ask_before_closing = never
+  detachable_tabs = False
+[keybindings]
+[profiles]
+  [[default]]
+  [[studio4]]
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[studio4]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+      order = 0
+    [[[vpaned0]]]
+      type = VPaned
+      parent = window0
+      order = 0
+      position = 520
+    [[[hpaned_top]]]
+      type = HPaned
+      parent = vpaned0
+      order = 0
+      position = 960
+    [[[hpaned_bottom]]]
+      type = HPaned
+      parent = vpaned0
+      order = 1
+      position = 960
+    [[[term_http]]]
+      type = Terminal
+      parent = hpaned_top
+      order = 0
+      profile = studio4
+      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --http-server; exec bash'"
+    [[[term_task_server]]]
+      type = Terminal
+      parent = hpaned_top
+      order = 1
+      profile = studio4
+      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --task-server; exec bash'"
+    [[[term_task_worker]]]
+      type = Terminal
+      parent = hpaned_bottom
+      order = 0
+      profile = studio4
+      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --task-worker; exec bash'"
+    [[[term_task_worker_algo]]]
+      type = Terminal
+      parent = hpaned_bottom
+      order = 1
+      profile = studio4
+      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --task-worker-algorithm; exec bash'"
+[plugins]
