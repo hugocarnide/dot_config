@@ -2,7 +2,7 @@
 
 
 #evolution &
-flatpak run org.gnome.Evolution
+flatpak run org.gnome.Evolution &
 #slack --gtk-version=3 &
 slack &
 /home/hugoc/bin/pause_media_on_call.sh &
