@@ -136,7 +136,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads NVM bash_completion
 #source /usr/share/nvm/init-nvm.sh
 alias nvm_load='source /usr/share/nvm/init-nvm.sh'
-export PATH="$PATH:/home/hugoc/.nvm/versions/node/v20.16.0/bin/"
+matches=(/home/hugoc/.nvm/versions/node/*/bin/)
+export PATH="$PATH:$matches[1]"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform

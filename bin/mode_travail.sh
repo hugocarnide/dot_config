@@ -61,3 +61,7 @@ sleep 60
 # disable bluethooth
 # rfkill block $(rfkill list|grep bluetooth | awk -F: '{print $1}'  )
 # rfkill list
+
+if [ "$(hostname)" == "hugo-pc-clemex" ] ; then
+	flatpak run org.freefilesync.FreeFileSync
+fi
