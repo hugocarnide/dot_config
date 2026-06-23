@@ -63,5 +63,6 @@ sleep 60
 # rfkill list
 
 if [ "$(hostname)" == "hugo-pc-clemex" ] ; then
-	flatpak run org.freefilesync.FreeFileSync
+	flatpak run org.freefilesync.FreeFileSync &
+	cd /media/documents/git && git fetch --prune --tags
 fi
