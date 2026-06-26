@@ -41,23 +41,27 @@
       parent = hpaned_top
       order = 0
       profile = studio4
-      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --http-server; exec bash'"
+      command = "bash -lc './hugo_scripts/studio_desktop_services.sh --http-server; exec bash'"
+      directory = /media/documents/git/ClemexStudio
     [[[term_task_server]]]
       type = Terminal
       parent = hpaned_top
       order = 1
       profile = studio4
-      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --task-server; exec bash'"
+      command = "bash -lc './hugo_scripts/studio_desktop_services.sh --task-server; exec bash'"
+      directory = /media/documents/git/ClemexStudio
     [[[term_task_worker]]]
       type = Terminal
       parent = hpaned_bottom
       order = 0
       profile = studio4
-      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --task-worker; exec bash'"
+      command = "bash -lc './hugo_scripts/studio_desktop_services.sh --task-worker; exec bash'"
+      directory = /media/documents/git/ClemexStudio
     [[[term_task_worker_algo]]]
       type = Terminal
       parent = hpaned_bottom
       order = 1
       profile = studio4
-      command = "bash -lc 'cd /media/documents/git/ClemexStudio; ./hugo_scripts/studio_desktop_services.sh --task-worker-algorithm; exec bash'"
+      command = "bash -lc './hugo_scripts/studio_desktop_services.sh --task-worker-algorithm; exec bash'"
+      directory = /media/documents/git/ClemexStudio
 [plugins]
