@@ -44,7 +44,7 @@ done
 code /media/documents/git/ClemexStudio.code-workspace &
 
 #obsidian &
-flatpak run md.obsidian.Obsidian &
+#flatpak run md.obsidian.Obsidian &
 xdg-open "obsidian://open?path=/media/documents/obsidian/HugoNotes"
 
 poetry-login
