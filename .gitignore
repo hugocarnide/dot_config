@@ -1,0 +1,26 @@
+# Files with my name
+hugo
+hugo_excep.py
+_hugo_files
+*hugo*
+
+
+*pyarmor*
+*.log.*
+libraries/clemex-licensing/lice*
+.githooks/
+.github/hooks/rtk-rewrite.json
+
+#Studio
+**/server/data
+
+
+#Claude
+.claude/*
+.claude/settings*.json
+.claude/worktrees
+*/agents/semble-search.md
+.github/copilot-instructions.local.md
+.worktrees/
+
+

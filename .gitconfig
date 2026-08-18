@@ -1,0 +1,19 @@
+[user]
+	name = Hugo Carnide
+	email = hugoc@clemex.com
+[core]
+	editor =  "code --reuse-window --wait"
+	excludesFile = ~/.gitignore
+[safe]
+	directory = /mnt/nvme0n1p3/Users/hugoc/Documents/git/ClemexStudio
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+    amend = commit --amend --no-edit
+    rebaseit = rebase origin/main -i
+    lease = push origin --force-with-lease
+[init]
+	defaultBranch = main
