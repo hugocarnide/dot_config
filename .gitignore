@@ -13,14 +13,17 @@ libraries/clemex-licensing/lice*
 
 #Studio
 **/server/data
+clemex-studio-application/server/initial_checkpoint_weights
+libraries/dl_segmentation/model_weights/model_weights
 
 
 #Claude
+
 .claude/*
 .claude/settings*.json
 .claude/worktrees
 */agents/semble-search.md
 .github/copilot-instructions.local.md
-.worktrees/
+# .worktrees/
 
 
