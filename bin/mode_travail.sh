@@ -11,7 +11,6 @@ slack &
 #wmctrl -m|grep Mutter
 #if [ $? -eq 0 ] ; then
 if [ "$XDG_SESSION_TYPE" == "wayland" ] ; then
-  xhost +local:$USER > /dev/null
   if ! pgrep -f "aw-server-rust" > /dev/null; then
     /opt/activitywatch/aw-server-rust/aw-server-rust &
   fi
@@ -20,6 +19,7 @@ if [ "$XDG_SESSION_TYPE" == "wayland" ] ; then
   fi
   #aw-qt &
 else
+  xhost +local:$USER > /dev/null
   #aw-server &
   #aw-server-rust &
   #aw-watcher-window &
