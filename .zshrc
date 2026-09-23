@@ -95,7 +95,7 @@ alias git-amend='git commit --amend --no-edit'
 alias git-lease='git push --force-with-lease'
 alias git-rebase-it='git rebase origin/main -i'
 alias git-continue='git rebase --continue'
-alias poetry-login='poetry config http-basic.private_pypi oauth2accesstoken `gcloud config config-helper --format="value(credential.access_token)"` && poetry config http-basic.private_pypi_simple oauth2accesstoken `gcloud config config-helper --format="value(credential.access_token)"`'
+alias poetry-login='gcloud auth login && poetry config http-basic.private_pypi oauth2accesstoken `gcloud config config-helper --format="value(credential.access_token)"` && poetry config http-basic.private_pypi_simple oauth2accesstoken `gcloud config config-helper --format="value(credential.access_token)"`'
 export EDITOR='code --wait'
 
 
